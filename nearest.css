@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  position: relative; /* Make the body a positioned element to allow z-index usage */
+}
+
+/* Add a pseudo-element to create the background image with opacity */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220217/pngtree-simple-creative-world-blood-donation-day-public-welfare-publicity-background-design-image_952595.jpg");
+  background-size: contain;
+  opacity: 0.8; /* Set the desired opacity value here (0.5 means 50% opacity) */
+  z-index: -1; /* Place the pseudo-element behind the main content */
+}
+
+/* Navbar */
+/* #header {
+  height: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #30A2FF;
+  background-image: linear-gradient(45deg, #FF0060, red);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  font-size: large;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 32px;
+  height: auto;
+}
+
+.icon_link {
+  position: relative;
+  right: 42%;
+}
+
+.top {
+  color: rgba(255, 255, 255, 0.824);
+  font-weight: 500;
+}
+
+.top:hover {
+  color: white;
+} */
+
+#header{
+  height: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* background-color: #30A2FF; */
+  /* background-image: linear-gradient(45deg,#FF0060,red); */
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  font-size: large;
+
+  
+}
+.icon{
+  width: 32px;
+  height: auto;
+  display: inline-block;
+
+  /* right: 44%; */
+}
+.title_main{
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 37%;
+}
+.icon_link{
+  /* position: relative; */
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  font-family: "Nunito";
+
+  /* right: 42%; */
+}
+.icon_link:hover,
+.icon_link:focus{
+  filter: brightness(120%);
+}
+
+.top{
+  padding-right:10px;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.824);
+  /* text-shadow: 2px 2px 2px black; */
+  font-weight: 500;
+  text-decoration:none;
+}
+
+.top:hover,
+.top:focus{
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.621);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+
+  
+  }
+
+/* Main content */
+.main-content {
+  background-color: #fff;
+  padding-block: 20px; 
+  border-radius: 7px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 750px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  position: relative;
+  bottom: 20px;
+  height: 3.5rem;
+  background-color: teal;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* align-self: center; */
+  /* margin: 30px 0; */
+  /* text-decoration: underline; */
+  color: white;
+}
+
+.para {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Form and table */
+fieldset {
+  border: none;
+}
+
+.box1 {
+  text-align: center;
+}
+
+.state {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #f52323;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ff0000;
+}
+
+.box2 {
+  margin: 30px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f41313;
+  color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* footer*/
+#contact{
+  background-color: teal;
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 2rem;
+  min-height: 200px;
+   /* height: 200px; */
+}
+.linkage{
+  color:white;
+  font-size: 1.3rem;
+  font-family: 'Nunito';
+  text-decoration: none;
+  background-image: linear-gradient(-45deg, #F9F5F6,#D2E9E9,#CDF0EA,#F9F9F9);
+  font-weight: 600;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor:pointer;
+}
+.linkage:hover{
+  text-decoration: underline;
+}
+.footer{
+  align-items: center;
+  /* width: 729px; */
+  /* font-family: "Nunito"; */
+  justify-content: space-evenly;
+  padding-bottom:1rem ;
+  display: flex;
+  /* padding: 61px 30px 34px 466px */
+}
+.footer-head{
+  
+  font-family: 'Nunito';
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+
+}
+.faq_don{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.sm_link{
+  color:white;
+  font-size: 1rem;
+  padding: 0.2rem;
+  font-family: 'Roboto';
+  /* margin-top: 1rem; */
+  text-decoration: none;
+  font-weight: 300;
+  /* -webkit-background-clip: text; */
+  /* color: transparent; */
+  cursor:pointer;
+}
+.sm_link:hover{
+  text-decoration: underline;
+  filter:contrast(120%)
+}
+.terms{
+  text-align: center;
+}
+.tm_link{
+  color: aliceblue;
+  font-weight: 200;
+  font-size: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  padding-bottom:1rem ;
+}
+.terms a:hover{
+  filter: brightness(140%);
+  /* color: black; */
+}
+.inline{
+  display: inline-block;
+}

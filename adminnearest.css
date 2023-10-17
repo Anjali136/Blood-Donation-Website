@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+}
+/* main{
+    width: 100vw;
+} */
+html {
+    scroll-behavior: smooth;
+  }
+img{
+    display: block;
+}
+  .content {
+    background-color: white;
+    /* padding: 0.5rem;
+    padding-left: 6.5rem;
+    padding-top: 2rem; */
+    background-color:transparent;
+    /* width: 75%; */
+   
+    border-radius: 20px 20px 0 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    width: 30%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    border-radius: 20px;
+    position:relative;
+    left: 20%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    padding-bottom: 2rem;
+   filter: drop-shadow(0 0 0.75rem rgb(14, 2, 4));
+   margin-left: 200px;
+   margin-top:50px;
+
+  }
+  body{
+    min-height: 100vh;
+  }
+  .ci{
+    font-size: 1.3rem;
+    color:#082323;
+    /* filter: brightness(120%); */
+    padding-block: 0.4rem;
+  }
+  #stat{
+    display: block;
+    font-size: 1.3rem;
+    width: 100%;
+    opacity: 0.95;
+    border-radius: 10px;
+    padding: 0.2rem;
+  }
+
+.pic{
+  height: 100vh;
+  width: 100%;
+  opacity: 0.8;
+  filter: blur(2px);
+  position: relative;
+}
+.image
+{
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* height:200vh; */
+ /* background-image: url('./WhatsApp\ Image\ 2023-07-30\ at\ 02.57.09.jpg'); */
+ background-size: cover;
+}
+.head1
+{
+    text-align:center ;
+    position: relative;
+    left: 25%;
+    padding-top: 100px;
+    color: #082323;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  #button {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #FCAEAE;
+    padding: 0.5rem;
+    transition: ease-out 0.5s;
+    padding-inline: 0.8rem;
+    font-weight: 400;
+    color: #03001c;
+   text-align: center;
+   position: relative;
+   left: 27%;
+   /* background-size: 400%; */
+    cursor: pointer;
+    
+  }
+  #button:hover{
+    color: white;
+    box-shadow: inset 0 -100px  0 #FCAEAE;
+  }
+  /* button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 21px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:#FCAEAE;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.8s;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #FCAEAE;
+    margin-left: 680px;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px  0 #FCAEAE;
+    border: inset 2px solid black;
+
+  } */
+  
+  /* button:active {
+    transform: scale(0.9);
+  } */
+  .log{
+    color:black;
+    text-decoration: none;
+  }
+  button:hover{
+    color:white;
+    text-decoration: none;
+    border: inset 2px solid black;
+  }
+  .inline {
+    display: inline-block;
+    margin: 0;
+    margin-left: 0.6rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .label {
+    font-size: 1.3rem;
+    font-family: "Nunito";
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border-radius: 5px;
+    /* margin-left: 2rem; */
+    font-weight: 500;
+  }
+  #header{
+    height: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* background-color: #30A2FF; */
+    /* background-image: linear-gradient(45deg,#FF0060,red); */
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    font-size: large;
+
+    
+}
+.icon{
+  width: 32px;
+  height: auto;
+  display: inline-block;
+
+  /* right: 44%; */
+}
+.title_main{
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 45rem;
+}
+.icon_link{
+  /* position: relative; */
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  font-family: "Nunito";
+
+  /* right: 42%; */
+}
+.icon_link:hover,
+.icon_link:focus{
+  filter: brightness(120%);
+}
+.header_content{
+  margin-right: 2rem;
+}
+.top{
+    padding-inline:10px;
+    margin-inline:1rem;
+    color: rgba(255, 255, 255, 0.824);
+    /* text-shadow: 2px 2px 2px black; */
+    font-weight: 500;
+    text-decoration:none;
+}
+
+.top:hover,
+.top:focus{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.621);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#contact{
+  background-color: teal;
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 2rem;
+  min-height: 200px;
+   /* height: 200px; */
+}
+.linkage{
+  color:white;
+  font-size: 1.3rem;
+  font-family: 'Nunito';
+  text-decoration: none;
+  /* color: white; */
+  /* background-image: linear-gradient(-45deg, #F9F5F6,#D2E9E9,#CDF0EA,#F9F9F9); */
+  font-weight: 600;
+  /* -webkit-background-clip: text; */
+  /* color: transparent; */
+  cursor:pointer;
+}
+.linkage:hover{
+  text-decoration: underline;
+}
+.footer{
+  align-items: center;
+  /* width: 729px; */
+  /* font-family: "Nunito"; */
+  justify-content: space-evenly;
+  padding-bottom:1rem ;
+  display: flex;
+  /* padding: 61px 30px 34px 466px */
+}
+.footer-head{
+  
+  font-family: 'Nunito';
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+
+}
+.faq_don{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.sm_link{
+  color:white;
+  font-size: 1rem;
+  padding: 0.2rem;
+  font-family: 'Roboto';
+  /* margin-top: 1rem; */
+  text-decoration: none;
+  font-weight: 300;
+  /* -webkit-background-clip: text; */
+  /* color: transparent; */
+  cursor:pointer;
+}
+.sm_link:hover{
+  text-decoration: underline;
+  filter:contrast(120%)
+}
+.terms{
+  text-align: center;
+}
+.tm_link{
+  color: aliceblue;
+  font-weight: 200;
+  font-size: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  padding-bottom:1rem ;
+}
+.terms a:hover{
+  filter: brightness(140%);
+  /* color: black; */
+}
+.inlinee{
+  display: inline-block;
+  cursor: auto;
+}
+.log{
+  color: black;
+}
+.log:hover{
+  color: aliceblue;
+}
